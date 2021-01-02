@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<body>
+<form method="POST">
+    <input id="Breed_name" name="Breed_name" type="text" placeholder="Breed name" required>
+    <input id="Intelligence_ranking" name="Intelligence_ranking" type="number" step="1" placeholder="Intelligence ranking" required>
+    <input id="Description" name="Description" type="text" placeholder="Description" required>
+    <input id="Size" name="Size" type="text" placeholder="Size (Small, Medium, Large)" required pattern="^(Small|Medium|Large)$">
+    <input id="Sheds" name="Sheds" type="text" placeholder="Sheds (yes, no)" required pattern="^(yes|no)$">
+    <input id="Family_friendly" name="Family_friendly" type="text" placeholder="Family friendly (yes, no)" required pattern="^(yes|no)$">
+    <input id="Guard" name="Guard" type="text" placeholder="Guard dog (yes, no)" required pattern="^(yes|no)$">
+    <input type="submit" value="Submit">
+</form>
+<p>Please use capital letters, except for the yes-no questions!</p>
+{% if added == "yes" %}
+<p>Breed added!</p>
+{% endif %}
+{% if added == "already" %}
+<p>Breed already exists.</p>
+{% endif %}
+
+</body>
+</html>
+

@@ -1,0 +1,1 @@
+My final project is a dog website. I made it because I love dogs. I explain the three functions in the video. I use python, SQL, HTML and CSS. I love Cs50!
